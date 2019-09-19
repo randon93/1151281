@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Webside - Showdown</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="container">
+        <a>
+          <img src="img/logo.jpeg">
+          <h1>SHOWDOWN</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <input class="btn btn-primary" type="button" value="Cerrar Sesion" onclick="cerrarsesion()">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <div class="cartas">
+          <a>
+            <img src="img/1.png" alt="">
+          </a>
+          <a>
+            <img src="img/2.png" alt="">
+          </a>
+          <a>
+            <img src="img/3.png" alt="">
+          </a>
+          <a>
+            <img src="img/4.png" alt="">
+          </a>
+          <br>
+          <a>
+            <img src="img/5.png" alt="">
+          </a>
+          <a>
+            <img src="img/6.png" alt="">
+          </a>
+          <a>
+            <img src="img/7.png" alt="">
+          </a>
+          <a>
+            <img src="img/8.png" alt="">
+          </a>
+          <br>
+          <a>
+            <img src="img/9.png" alt="">
+          </a>
+          <a>
+            <img src="img/10.png" alt="">
+          </a>
+          <a>
+            <img src="img/11.png" alt="">
+          </a>
+          <a>
+            <img src="img/12.png" alt="">
+          </a>
+          <br>
+          <a>
+            <img src="img/13.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="col4">
+        <div class="parte2">
+          <div id="tablares"></div>
+          <table id="table7" class="table talbe-striped">
+            <thead>
+              <tr>
+                <th scope="col">Numero</th>
+                <th scope="col">Carta</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody id="res"></tbody>
+          </table>
+
+          <div class="row2">
+            <form action="form">
+              <h2>Registro de cartas</h2>
+              <input id="nume" class="form-control" type="text" placeholder="Numero" required="required">
+              <br>
+              <input id="cart" class="form-control" type="text" placeholder="Carta" required="required">
+              <br>
+              <input class="btn btn-primary" type="button" value="Ingresar" onclick="sumar()">
+              <br>
+            </form>
+            <hr>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  <h1></h1>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="cartas.json">
+
+  </script>
+  <script type="text/javascript">
+    data = JSON.parse(cartas.json);
+  </script>
+
+</body>
+
+</html>
